@@ -19,12 +19,15 @@ this.state = {
             [name]: value
         });
     }
+
+
 render(){
         return(
         <div>
     <form>
         <label>
             email:
+            <br/>
             <input
                 type="email"
                 name="email"
@@ -33,9 +36,10 @@ render(){
                 placeholder={"enter email"}
             />
         </label>
-
+        <br/>
         <label>
             password:
+            <br/>
             <input
                 type="password"
                 name="password"
@@ -44,14 +48,15 @@ render(){
                 placeholder={"enter password"}
             />
         </label>
+        <br/>
         <input type="submit" value="sign in" />
     </form>
-    <a
-        className="App-link"
-        href="https://google.com"
+    <button
+
+        ref='/feed'
     >
         join us
-    </a>
+    </button>
         </div>
     );
 }
