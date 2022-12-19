@@ -8,7 +8,7 @@ import lombok.*;
 @Getter
 @Setter
 @RequiredArgsConstructor
-@Table
+@Table(name = "users")
 public class User {
 
     @Id
@@ -23,5 +23,11 @@ public class User {
 
     @Column
     private String password;
+
+    public User(String email, String name, String password){
+    this.email = email;
+    this.name = name;
+    this.password = password;
+    }
 
 }
