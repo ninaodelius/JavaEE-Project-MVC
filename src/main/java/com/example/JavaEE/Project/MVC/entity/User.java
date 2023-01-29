@@ -8,7 +8,7 @@ import lombok.*;
 @Getter
 @Setter
 @RequiredArgsConstructor
-@Table(name = "users")
+@Table
 public class User {
 
     @Id
